@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background-color: rgb(132, 131, 131);
+}
+#navigation-bar{
+    background-color: aqua;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navigation-bar div{
+    background-color: rgb(130, 93, 44);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 40px;
+    
+}
+.hero{
+    display: flex;
+    
+    height: 100%;
+}
+.hero1{
+    background-color: rgb(123, 84, 118);
+    height: 100%;
+    width: 25%;
+}
+.hero2{
+    
+    width:auto ;
+    
+    
+}
+.input-el{
+    width: 100%;
+    border-radius: 20px;
+    height: 25px;
+    border: none;
+    margin-right: 15px;
+}
+.sending{
+    display: flex;
+    margin-top:auto;
+    
+}
+.sending button{
+    border-radius: 15px;
+    height: 25px;width: 50px;
+}
+.ul-el div{
+background-color: skyblue;
+color: white;
+height: 50px;
+width: 240px;
+margin-top: 20px;
+border-radius: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
