@@ -14,14 +14,16 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app)
 const referenceInDB = ref(database,"messages")
 
-let inputChat=document.getElementsByClassName("input-el")[0]
+const currentUser = "user1"
+
+let inputChat=document.getElementsByClassName("input-el")[0] 
 let ulel = document.getElementsByClassName("ul-el")[0]
 let chatbtn = document.getElementById("chat-btn")
 chatbtn.addEventListener("click", function(){
     const message = inputChat.value.trim()
     if(message){
-        push(referenceInDB,{content: message, timestamp: Date.now()})
-        ulel.innerHTML+="<div>"+inputChat.value+"</div>"
+        push(referenceInDB,{content: message, timestamp: Date.now(),user: currentUser})
+        
         inputChat.value = ""
     }
     
@@ -33,7 +35,17 @@ onValue(referenceInDB,function(snapshot){
     let sms = Object.entries(snapshotValues)
     for(let i=0;i<=sms.length-1;i++){
         let messageContent = sms[i][1].content;
-        ulel.innerHTML+="<div>"+messageContent+"</div>"
+        let messageUser = sms[i][1].user
+        if(messageContent){
+            if(messageUser === currentUser){
+           ulel.innerHTML+=`<div class="my-message">${messageContent}</div>`
+        }
+        else{
+            ulel.innerHTML+=`<div class="other-message">${messageContent}</div>` 
+        } 
+        }
+       
+        
     }
     
 })

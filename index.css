@@ -31,8 +31,9 @@ body{
     width: 25%;
 }
 .hero2{
-    
-    width:auto ;
+    display: flex;
+    flex-direction: column;
+    width:75% ;
     
     
 }
@@ -42,25 +43,41 @@ body{
     height: 25px;
     border: none;
     margin-right: 15px;
+    
 }
 .sending{
     display: flex;
     margin-top:auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 .sending button{
     border-radius: 15px;
     height: 25px;width: 50px;
 }
-.ul-el div{
-background-color: skyblue;
-color: white;
-height: 50px;
-width: 240px;
-margin-top: 20px;
-border-radius: 15px;
+.ul-el{
+    
+    
+    width: 100%;
 }
+.ul-el div{
+    
+    color: white;
+    height: 50px;
+    width: 240px;
+    margin-top: 20px;
+    border-radius: 15px;
+    }
 a{
     text-decoration: none;
     color: white;
+}
+.my-message{
+    background-color: skyblue;
+}
+.other-message{
+    background-color: rgb(138, 210, 138);
+    margin-left: auto;
 }
