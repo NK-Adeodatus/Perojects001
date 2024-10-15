@@ -14,7 +14,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app)
 const referenceInDB = ref(database,"messages")
 
-const currentUser = "user1"
+const currentUser = prompt("Please enter your name:") || "Anonymous"
 
 let inputChat=document.getElementsByClassName("input-el")[0] 
 let ulel = document.getElementsByClassName("ul-el")[0]
