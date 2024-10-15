@@ -25,7 +25,7 @@ body{
 .hero{
     display: flex;
     
-    height: 100%;
+    height: 91%;
 }
 .hero1{
     background-color: rgb(123, 84, 118);
@@ -36,6 +36,7 @@ body{
     display: flex;
     flex-direction: column;
     width:75% ;
+    
     
     
 }
@@ -49,7 +50,7 @@ body{
 }
 .sending{
     display: flex;
-    margin-top:auto;
+    margin-top:10px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -67,10 +68,12 @@ body{
 .ul-el div{
     
     color: white;
-    height: 50px;
+    min-height: 50px;
     width: 240px;
-    
+    padding: 5px;
     border-radius: 15px;
+    word-wrap: break-word;
+    height: auto;
     }
 a{
     text-decoration: none;
@@ -113,12 +116,51 @@ a{
 }
 .ul-el .m-user-name{
     color: white;
-    margin-top: 20;
+    width: 180px;
     height: 20px;
 }
 .ul-el .o-user-name{
     color: white;
-    margin-top: 20;
-    margin-left: auto;
+    
+    
     height: 20px;
+}
+.ul-el .m-header-container{
+    display: flex;
+    margin-top: 20px;
+    height: 20px;
+    
+}
+.ul-el .o-header-container{
+    margin-left: auto;
+    display: flex;
+    margin-top: 20px;
+    height: 20px;
+}
+.ul-el .timestamp{
+    width: 100px;
+    height: 20px;
+    
+}
+@media (min-width:600px){
+    .ul-el div{
+    
+        color: white;
+        min-height: 50px;
+        height: auto;
+        width: 400px;
+        
+        border-radius: 15px;
+        }
+}
+@media (min-width:1024px){
+    .ul-el div{
+    
+        color: white;
+        min-height: 50px;
+        height: auto;
+        width: 500px;
+        
+        border-radius: 15px;
+        }
 }
