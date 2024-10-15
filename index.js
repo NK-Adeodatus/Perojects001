@@ -19,16 +19,26 @@ const currentUser = "user1"
 let inputChat=document.getElementsByClassName("input-el")[0] 
 let ulel = document.getElementsByClassName("ul-el")[0]
 let chatbtn = document.getElementById("chat-btn")
-chatbtn.addEventListener("click", function(){
+
+function sendMessage(){
     const message = inputChat.value.trim()
     if(message){
         push(referenceInDB,{content: message, timestamp: Date.now(),user: currentUser})
         
         inputChat.value = ""
     }
-    
+}
 
+chatbtn.addEventListener("click", sendMessage) //event listener for the send button
+
+inputChat.addEventListener("keypress", function(event){
+    if(event.key === "Enter"){
+        sendMessage()
+        event.preventDefault()
+    }
 })
+
+
 onValue(referenceInDB,function(snapshot){
     const snapshotValues = snapshot.val()
     ulel.innerHTML = ""
