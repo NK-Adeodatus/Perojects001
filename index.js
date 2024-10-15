@@ -23,6 +23,7 @@ let chatbtn = document.getElementById("chat-btn")
 function sendMessage(){
     const message = inputChat.value.trim()
     if(message){
+        
         push(referenceInDB,{content: message, timestamp: Date.now(),user: currentUser})
         
         inputChat.value = ""
@@ -47,10 +48,21 @@ onValue(referenceInDB,function(snapshot){
         let messageContent = sms[i][1].content;
         let messageUser = sms[i][1].user
         if(messageContent){
+            
             if(messageUser === currentUser){
-           ulel.innerHTML+=`<div class="my-message">${messageContent}</div>`
+                // Create a new div for the user's name
+                const userNameDiv = document.createElement("div");
+                userNameDiv.textContent = messageUser; // Set the text to the message sender's name
+                userNameDiv.classList.add("m-user-name")
+                ulel.appendChild(userNameDiv)
+                ulel.innerHTML+=`<div class="my-message">${messageContent}</div>`
         }
         else{
+            // Create a new div for the user's name
+            const userNameDiv = document.createElement("div");
+            userNameDiv.textContent = messageUser; // Set the text to the message sender's name
+            userNameDiv.classList.add("o-user-name")
+            ulel.appendChild(userNameDiv)
             ulel.innerHTML+=`<div class="other-message">${messageContent}</div>` 
         } 
         }

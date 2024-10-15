@@ -69,7 +69,7 @@ body{
     color: white;
     height: 50px;
     width: 240px;
-    margin-top: 20px;
+    
     border-radius: 15px;
     }
 a{
@@ -110,4 +110,15 @@ a{
     .hero-text{
         font-size: large;
     }
+}
+.ul-el .m-user-name{
+    color: white;
+    margin-top: 20;
+    height: 20px;
+}
+.ul-el .o-user-name{
+    color: white;
+    margin-top: 20;
+    margin-left: auto;
+    height: 20px;
 }
