@@ -13,7 +13,7 @@ body{
 }
 #navigation-bar div{
     background-color: rgb(130, 93, 44);
-    width: 150px;
+    width: 90%;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -87,4 +87,27 @@ a{
 #chat-container {
     overflow-y: auto;
     max-height: 80vh; /* Adjust this to your needs */
+}
+.nav1{
+    color: white
+}
+.hero-text{
+    color: white;
+    font-size: xx-large;
+}
+.logo-img{
+    width: 50px;  
+    height: auto; 
+    display: block;  
+    margin-bottom: 5px;
+}
+@media (max-width:1024px){
+    .hero-text{
+        font-size: x-large;
+    }
+}
+@media (max-width:600px){
+    .hero-text{
+        font-size: large;
+    }
 }
