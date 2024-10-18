@@ -51,7 +51,7 @@ onValue(referenceInDB,function(snapshot){
         if(messageContent){
             
             if(messageUser === currentUser){
-                // Create a header div for the username and timestamp container
+                // Create the header div for the username and timestamp container
                 const headerContainer = document.createElement("div");
                 headerContainer.classList.add("m-header-container")
                 // Create a div for timestamp
