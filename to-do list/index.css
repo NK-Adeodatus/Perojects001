@@ -1,0 +1,80 @@
+body{
+    background-color: #e8f5e9;
+}
+
+.header {
+display: flex;
+justify-content: center;
+}
+.ccontainer{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 330px;
+}
+button{
+    width: 60px;
+    height: 20px;
+    
+}
+.list-item{
+    margin-top: 5px;
+    display: flex; /* Use Flexbox to align items horizontally */
+
+    align-items: center; /* Vertically center the checkbox, text, and button */
+    align-items: flex-start;
+    justify-content: space-between; /* Distribute space between elements */
+}
+input{
+    background-color: rgb(241, 239, 239);
+    border-radius: 25px;
+    height: 15px;
+    width: 250px;
+    padding: 5px;
+}
+.add-el{
+    background-color: #f56555;
+    border-radius: 25px;
+    height: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+} 
+ul li{
+    list-style: none;
+}
+.todo-checkbox {
+    width: auto; /* Ensures the checkbox only takes its natural width */
+    height: auto;
+    cursor: pointer; /* Changes the cursor to pointer when hovering over the checkbox */
+}
+.delete-el{
+    border-radius: 8px;
+    margin-left: auto;
+}
+@media(min-width:600px){
+    input{
+        background-color: rgb(241, 239, 239);
+        border-radius: 25px;
+        height: 15px;
+        width: 350px;
+        padding: 5px;
+    }
+    .container{
+        width: 428px;
+    }
+}
+@media(min-width:1024px){
+    input{
+        background-color: rgb(241, 239, 239);
+        border-radius: 25px;
+        height: 15px;
+        width: 550px;
+        padding: 5px;
+    }
+    .container{
+        width: 628px;
+    }
+}
