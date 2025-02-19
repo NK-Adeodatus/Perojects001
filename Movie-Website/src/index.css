@@ -1,0 +1,301 @@
+html{
+    width: 1280px;
+    height: 580px;
+}
+body{
+    background-color: #182F30;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container img{
+    width: 235px;
+    height: 335px;
+}
+
+.hd-tag{
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 1px;
+}
+
+.star{
+    width: 30px;
+}
+.every-movie{
+    display: grid;
+    grid-template-columns: repeat(5, 235px);
+    gap: 15px;
+}
+
+.movie-picture{
+    width: 300px;
+    height: 300;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.star-img{
+    width: 50px;
+}
+
+.links-container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 250px;
+}
+
+.links-container p{
+    margin-bottom: 5px;
+}
+
+a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+.activeLink{
+    color: rgb(164, 21, 64);
+}
+#root{
+    height: 583px;
+    
+}
+
+ .layout{
+     /* background-image: url(https://m.media-amazon.com/images/M/MV5BZjM2M2E3YzAtZDJjYy00MDhkLThiYmItOGZhNzQ3NTgyZmI0XkEyXkFqcGc@._V1_.jpg);
+     background-size: 100% 100%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    margin-top: auto;
+    background-color: #0A191E;
+}
+
+.home-main{
+    background-color: #182F30;
+    height: 350px;
+}
+
+.main-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.home-btn{
+    display: inline;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 4px;
+    font-size: larger;
+    color: black;
+} 
+.home-btn:hover{
+    background-color: grey;
+    color: white;
+}
+
+
+.paragraph-content{
+    text-align: center;
+    line-height: 1.5;
+}
+
+nav{
+    background-color: #0A191E;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20pxs;
+}
+
+main{
+    background-color: #182F30;
+    padding: 10px;
+}
+
+#search-input{
+    height: 30px;
+    
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 50px;
+    width: 200px;
+}
+
+#navigationLink{
+    margin-left: 10px;
+}
+
+.input-container{
+    position: relative;
+    height: 30px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: 60px;
+    width: 200px;
+}
+
+.input-container img{
+    width: 25px;
+    position: absolute;
+    top: 5px;
+    left: 170px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 10px;
+}
+
+.movie-name{
+    margin-left: 10px;
+}
+
+.duration{
+    margin-left: 10px;
+}
+
+.container{
+    width: 235px;
+    background-color: #0A191E;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#action-btn{
+    width: 70px;
+    height: 25px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#action-btn:hover{
+    background-color: #182F30;
+    color: white;
+}
+#adventure-btn{
+    width: 90px;
+    height: 25px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#adventure-btn:hover{
+    background-color: #182F30;
+    color: white;
+}
+#clear-btn{
+    width: 70px;
+    height: 25px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#clear-btn:hover{
+    background-color: #182F30;
+    color: white;
+}
+
+.rating-Id{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.rating-Id img{
+    width: 25px;
+}
+
+#like-btn{
+    width: 70px;
+    height: 25px;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#like-btn:hover{
+    background-color: #182F30;
+    color: white;
+}
+
+.div-id-container{
+    display: flex;
+}
+
+.type-title-container{
+    display: flex;
+    align-items: center;
+}
+
+.discriptionContainer{
+    width: 700px;
+}
+
+#back-to-allMovies{
+    margin: auto;
+    color: white;
+}
+
+.back-to-allMovies-container{
+    background-color: #0A191E;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.back-to-allMovies-container:hover{
+    background-color: #030607;
+}
+
+#login-btn{
+    margin-right: 50px;
+    background-color: #182F30;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+#login-btn:hover{
+    background-color: grey;
+}
+
+#about p{
+    text-align: center;
+    line-height: 1.5;
+}
